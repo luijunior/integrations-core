@@ -51,6 +51,12 @@ files:
               type: array
               items:
                 type: string
+              default:
+                - configfs$
+                - debugfs$
+                - securityfs$
+                - sysfs$
+                - tracefs$
           - name: device_whitelist
             description: |
                 Instruct the check to only collect from matching devices.
